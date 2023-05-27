@@ -8,4 +8,4 @@ Follow the [computer-vision-python setup instructions](https://github.com/UWARG/
 
 ## Training
 
-See [this Confluence page](https://uwarg-docs.atlassian.net/wiki/spaces/CV/pages/2236612819/Model+Training#Model-Training) for instructions on training the ML model.
+See [the subpages under here](https://uwarg-docs.atlassian.net/wiki/spaces/CV/pages/2236612819/Model+Training) for instructions on preparing the dataset and running training.
