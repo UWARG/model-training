@@ -6,5 +6,6 @@
 venv/
 __pycache__/
 
-# Ultralytics
+# Pytorch and Ultralytics
 *.pt
+*.pth
