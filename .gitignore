@@ -9,3 +9,6 @@ __pycache__/
 # Pytorch and Ultralytics
 *.pt
 *.pth
+
+# Logging
+*log*
