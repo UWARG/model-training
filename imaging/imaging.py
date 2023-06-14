@@ -15,8 +15,9 @@ if __name__ == "__main__":
 
     camera = cv2.VideoCapture(CAMERA_NAME)
     if not camera.isOpened():
-        print("ERROR: Cannot open camera")
-        sys.exit()
+        with open(SAVE_PREFIX + "error.txt", "w") as f:
+            f.write(SAVE_PREFIX + "\n" + "ERROR: Failed to open camera")
+        assert False
 
     camera.set(cv2.CAP_PROP_FRAME_WIDTH, sys.maxsize)
     camera.set(cv2.CAP_PROP_FRAME_HEIGHT, sys.maxsize)
