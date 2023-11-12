@@ -8,6 +8,10 @@ import cv2
 
 
 CAMERA_NAME = 0
+# TODO: Move this to configuration file
+CAMERA_WIDTH = 1920
+CAMERA_HEIGHT = 1200
+
 SAVE_PREFIX = "log_record_" + str(int(time.time())) + "_"
 DELAY = 1  # seconds
 
@@ -19,8 +23,15 @@ if __name__ == "__main__":
             f.write(SAVE_PREFIX + "\n" + "ERROR: Failed to open camera")
         assert False
 
-    camera.set(cv2.CAP_PROP_FRAME_WIDTH, sys.maxsize)
-    camera.set(cv2.CAP_PROP_FRAME_HEIGHT, sys.maxsize)
+    result = camera.set(cv2.CAP_PROP_FRAME_WIDTH, CAMERA_WIDTH)
+    assert result
+    result = camera.set(cv2.CAP_PROP_FRAME_HEIGHT, CAMERA_HEIGHT)
+    assert result
+
+    width = camera.get(cv2.CAP_PROP_FRAME_WIDTH)
+    assert width == CAMERA_WIDTH
+    height = camera.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    assert height == CAMERA_HEIGHT
 
     i = 0
     while True:
