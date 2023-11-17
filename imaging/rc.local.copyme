@@ -1,5 +1,5 @@
 #!/bin/bash
 # Copy the following contents to the end of rc.local:
 
-chmod +x /home/warg/model-training/imaging/run.sh
-/home/warg/model-training/imaging/run.sh
+chmod +x /home/warg/model-training/imaging/run.sh # TODO: Update
+/home/warg/model-training/imaging/run.sh # TODO: Update
