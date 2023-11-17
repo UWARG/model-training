@@ -12,7 +12,7 @@ CAMERA_NAME = 0
 CAMERA_WIDTH = 1920
 CAMERA_HEIGHT = 1200
 
-SAVE_PREFIX = "log_record_" + str(int(time.time())) + "_"
+SAVE_PREFIX = "images/log_record_" + str(int(time.time())) + "_"
 DELAY = 1  # seconds
 
 if __name__ == "__main__":

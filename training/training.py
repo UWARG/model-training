@@ -32,7 +32,7 @@ if __name__ == "__main__":
         device=0,
         workers=4,
         verbose=True,
-        resume=True  # Ignored if model is not initialized with an existing .pt model
+        resume=True,  # Ignored if model is not initialized with an existing .pt model
     )
 
     print("Done!")
