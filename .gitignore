@@ -1,14 +1,14 @@
 # IDEs
-.vscode/
 .idea/
+.vscode/
 
 # Python
-venv/
 __pycache__/
+venv/
+
+# Logging
+logs/
 
 # Pytorch and Ultralytics
 *.pt
 *.pth
-
-# Logging
-*log*

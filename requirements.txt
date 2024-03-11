@@ -1,5 +1,12 @@
+# Packages listed in alphabetical order
+
 # For any non-Jetson computer (i.e. all developers)
 --extra-index-url https://download.pytorch.org/whl/cu117
 torch==1.13.1+cu117
 torchvision==0.14.1+cu117
 ultralytics
+
+# Linters and formatters are explicitly versioned
+black==24.2.0
+flake8-annotations==3.0.1
+pylint==3.0.3
