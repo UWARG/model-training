@@ -19,7 +19,7 @@ DATASET_PATH = "2023_pad.yaml"
 # Configurations: https://docs.ultralytics.com/usage/cfg/
 IMAGE_DIMENSION = 720
 SAVE_EVERY_NTH_EPOCH = 10
-DEVICE = 0  # CUDA device
+DEVICE = 0  # CPU or CUDA device
 WORKER_COUNT = 4  # Worker threads
 
 
